@@ -1,0 +1,82 @@
+// 1 - Vari  veis e requisitos/m  dulos
+const express = require('express')
+const app = express()
+//const https = require('https');
+//const fs = require('fs');// --módulo fs para carregar as opções do certificado
+const morgan = require('morgan');
+
+var bodyParser = require('body-parser')
+// Configurar o m  dulo morgan para gerar logs
+app.use(morgan('combined'));
+
+// Caminhos para os certificados SSL
+//const options = {
+//  key: fs.readFileSync('/etc/letsencrypt/live/inovabot.com.br/privkey.pem'),
+//  cert: fs.readFileSync('/etc/letsencrypt/live/inovabot.com.br/fullchain.pem')
+//};
+
+// Criar servidor HTTPS
+//const server = https.createServer(options, app);
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
+
+
+//Outros arquivos necessário
+//Conexão com BD mysql
+const connection = require('./conexaoDB'); // Importa a conexão com o banco de dados
+
+//2 - Serviços ou rotas
+//-----GET-----
+//
+    //Template
+            //app.get('/:XXX', function (req, res){
+            //    console.log('Template')
+            //    res.send('WEB: Template:')
+            //})
+
+
+//------------POST-----------
+//---/depósito: api original - Letsbot
+API_ROBintent_deposito = 0
+
+app.post('/deposito', function(req, res) {
+    //1 - Capturar/ Receber dados (post req)
+   //console.log(req.body)
+   action = req.body.queryResult.action
+   console.log("=-=-==-=-=-=-=-=");
+   console.log("----Intencao acionada:" + action)
+   console.log("=-=-==-=-=-=-=-=");
+   //Intencoes
+   // 2 - Regra de negócio
+   switch (true){
+    case action == "deposito":
+        API_ROBintent_deposito += 1
+        valor = req.body.queryResult.parameters.valor
+        console.log("Console: variável valor: "+ valor + "\n quantidade de vezes que foi acionada: " + API_ROBintent_deposito);
+           
+        // regra da variável valor
+        /* switch (true) {
+            case valor > 0:
+                valor_ajustado = valor + 0.5;
+        
+                // Envia uma resposta de sucesso
+                console.log('Res.send: Post: Serviço de depósito. Valor: ' + valor_ajustado);
+                res.send('Valor de res.send do Post: Serviço de depósito tem o valor da variável valor: ' + valor_ajustado);
+                break;
+        
+            default:
+                // Envia uma resposta de erro
+                console.log('Res.send: Post: Serviço de depósito. ERRO! Valor incompatível');
+                res.send('Valor de res.send do Post: Serviço de depósito. ERRO! Valor igual ou menor que 0');
+                break;
+        }*/
+        break; 
+    }
+   //case action == "extrato":
+   ////break;   
+})
+app.listen(3000)
