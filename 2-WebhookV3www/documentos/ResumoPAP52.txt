@@ -1,0 +1,58 @@
+Procedimentos para baixa/descarga de bens moveis...conforme PAP52
+Conforme orientação da nota nº1101-23-DLF: Alteração no processo de baixa de veículos:
+A própria OBM será responsável por oferecer o veículo na rede, sendo que:
+a) Se não houver interessados, deverá iniciar o processo de descarga do bem móvel;
+b) Se houver interessado, este deve abrir SAU ao CMOV solicitando a transferência do bem móvel
+em todos os sistemas, antes de recolhê-lo, a fim de evitar problemas de abastecimento no transporte
+da viatura.
+c) Sugerimos dar um prazo de 5 dias corridos para manifestação de interesse das OBM e em caso de
+mais de um interessado tentar gerenciar da melhor maneira possível entre as partes envolvidas,
+todavia em caso de impasse levar a situação ao comandante imediato;
+Processo de descarga (Motomecanizados):
+a) O BM solicitante, deve gerar processo via SGPe, com o assunto: 165 – baixa de bens moveis;
+classe: 2 - Processo sobre Baixa de Bens Móveis; Setor de competência:
+CBMSC/DLF/CMOV/PATR.
+Esta documentação será de acordo com o tipo de descarga a ser efetuada: descarga por
+inservibilidade, descarga com pedido de doação para entidade federativa, descarga com pedido de
+doação para entidade privada, descarga por sinistro, descarga por transferência entre órgãos
+estaduais e descarga por devolução aos cedentes;
+Nos casos de descarga por inservibilidade:
+a) Certificado de Registro de Veículo (CRV ou documento similar em caso de aeronaves,
+embarcações ou equipamentos);
+b) Documento orientador do valor atual do veículo/equipamento (Exemplo: tabela FIPE para
+veículos, site de vendas para embarcações/aeronaves/equipamentos); (*) Obs.: Atentar-se, ao retirar
+valor referência junto a tabela FIPE ou em sites de vendas para embarcações/ aeronaves/
+equipamentos, marca/modelo e ano deve ser o mesmo do bem.
+c) Certidão Negativa de Débitos (CND), para veículos/aeronaves/embarcações;
+d) Três orçamentos que comprovem valor de recuperação maior que 40% do valor do bem
+(caminhão com mais de dez anos e carros com mais de cinco anos não necessitam);
+e) Cartão de abastecimento;
+h) Ofício de encaminhamento ao Diretor de Logística e Finanças; (assinado digitalmente pelo
+comandante da OBM)
+
+f) Declaração com as fotografias que comprovam a total descaracterização (assinado digitalmente
+pelo comandante da OBM) do veículo e equipamento, (com imagens para compor o processo de baixa) ;
+(*) Obs.: As fotos devem ser nítidas e bem enquadradas.
+1. Providenciada a retirada de rádio de comunicação, faixas e letreiros refletivos, logomarcas, giroflex,
+tanque/implemento, bombas de incêndio (esses últimos três itens, exceto nos casos de doações e/ou
+transferências com finalidade descrita no pedido, para função que necessite dos mesmos), etc; e
+2. Além dos itens já mencionados, os veículos do tipo caminhão deverão separar o chassi do tanque
+(carroceria/implemento), sendo que entre a descarga do caminhão e dos implementos deverá se obedecer um
+
+lapso temporal de no mínimo 01 ano. (*) Obs.: Esta separação deverá ser feita quando da existência de dois
+números patrimoniais (PIM), um para o chassis e outro para o implemento, sendo ambos pertencendo ao
+CBMSC e/ou um ao CBMSC e outro a entidade diversa pública ou privada.
+
+g) Declaração que comprove o local específico que o bem ficará. (assinado digitalmente) Deverá
+conter o n° de patrimônio (PIM), descrição do bem que será baixado/descarregado (denominação,
+marca/modelo, ano, cor) local (endereço completo - Logradouro, Número, Complemento, Bairro,
+Cidade, CEP da unidade administrativa, nome e telefone do responsável para contato). O referido
+bem ficará guardado no referido local até a data do leilão, a ser realizado pela SEA/SC;
+h) Fotos nítidas do numero do motor e numero do chassi, conforme o documento do veiculo.
+Após inserir todas as peças de responsabilidade da OBM solicitante, deve se encaminhar para:
+CBMSC/8B/B4.
+Para que o responsável do B4 do batalhão, possa conferir e inserir as peças:
+a) Cópia do Boletim Interno (BI).
+b) Ata da Comissão Interna Permanente.
+
+

@@ -1,0 +1,36 @@
+Introdução:
+
+Bem-vindo à documentação do RobV2! Este guia servirá para você entender melhor o funcionamento e a estrutura do nosso bot, permitindo uma integração mais suave e facilitando futuras escalas e manutenções.
+
+Pacotes Necessários:
+
+express: Framework web para criar a API.
+body-parser: Middleware para analisar o corpo das requisições em formato JSON.
+winston: Biblioteca de logging para registrar informações.
+Arquivos e Funcionalidades:
+
+index.js:
+
+Responsabilidade: Serve como ponto de entrada do nosso bot, configurando e iniciando o servidor.
+Funcionalidades:
+Importa os módulos necessários, como Express e body-parser.
+Define e configura a aplicação Express.
+Configura o middleware para parsear JSON.
+Define a rota do webhook.
+Inicia o servidor, escutando na porta definida ou padrão (3000).
+webhook.js:
+
+Responsabilidade: Trata as requisições que chegam ao webhook e direciona-as para a intenção correta.
+Funcionalidades:
+Importa módulos e funções necessárias.
+Define variáveis para contagem e tratamento de intenções.
+Define uma rota POST para o webhook.
+Identifica a intenção a partir do JSON recebido.
+Direciona a requisição para o arquivo ou função correta, com base na intenção identificada.
+Registra logs de informações relevantes, como intenções acionadas.
+Trata o caso em que uma intenção não é reconhecida, registrando o erro e enviando uma resposta padrão.
+Como Funciona?
+
+Ao receber uma solicitação, o RobV2 primeiro analisa o corpo da requisição para identificar a intenção por trás dela. Com essa intenção identificada, o bot verifica em webhook.js qual ação deve ser executada. Se reconhecer a intenção, o bot seguirá o caminho programado. Caso contrário, ele retornará uma mensagem padrão de erro, e essa atividade será registrada para análises futuras.
+
+Dentro do webhook.js, cada intenção possui um tratamento específico. Por exemplo, para a intenção 2-#ConsultarCarrosCadastrados, o bot incrementa a contagem dessa intenção e, em seguida, chama a função consultaCarros que lida com essa solicitação específica.

@@ -1,0 +1,6 @@
+//Para ativar
+source venv/bin/activate
+
+//Para desativar
+deactivate
+

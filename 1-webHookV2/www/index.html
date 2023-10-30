@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- Incluindo Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="chat-box">
+            <!-- As mensagens serão exibidas aqui -->
+        </div>
+        <textarea id="message" placeholder="Digite sua mensagem..."></textarea>
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            // Pegando o valor da mensagem
+            let messageContent = document.getElementById('message').value;
+
+            // Criando um objeto JSON para enviar ao backend
+            let data = {
+                message: messageContent
+            };
+
+            // Enviando a mensagem para o backend usando POST
+            fetch('/send-message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Adicionando a mensagem ao chat-box
+                document.getElementById('chat-box').innerHTML += `<p>${data.message}</p>`;
+            });
+        }
+    </script>
+</body>
+</html>

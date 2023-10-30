@@ -1,0 +1,45 @@
+/* ... seus estilos existentes ... */
+
+/* ... Modal do Chatbot ... */
+#openChatbotBtn {
+    position: fixed;
+    left: 10px; /* Posição no canto inferior esquerdo, alinhado com o chatbot */
+    bottom: 440px; /* Posicionado acima da caixa do chatbot */
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Garante que o botão fique acima do chatbot */
+}
+
+
+/* Estilos para o modal do chatbot */
+.chatbot-modal {
+    display: none;
+    position: fixed;
+    left: 10px; /* Posição do chatbot no canto inferior esquerdo */
+    bottom: 10px;
+    z-index: 1000;
+}
+
+.chatbot-modal-content {
+    width: 320px; /* Largura do chatbot */
+    height: 420px; /* Altura do chatbot */
+    background-color: #fff; /* Fundo branco para o chatbot */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor do chatbot */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do chatbot */
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333; /* Fundo cinza escuro para o botão de fechar */
+    color: #fff; /* Texto branco para o botão de fechar */
+    border-radius: 0 10px 0 0; /* Bordas arredondadas apenas no canto superior direito */
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Tela do Chatbot</title>
+</head>
+<body>
+    <h1>Aqui rodará um chatbot em html</h1>
+     <!-- Botão para abrir o chatbot -->
+     <button id="openChatbotBtn">Abrir Chatbot</button>
+
+     <!-- Modal do Chatbot -->
+    <div id="chatbotModal" class="chatbot-modal">
+    <div class="chatbot-modal-content">
+        <span id="closeChatbotBtn" class="close">&times;</span>
+        <iframe src="chatbot.html" width="320" height="420"></iframe>
+    </div>
+</div>
+<script src="./js/chatbotEvents.js"></script>
+<script src="./js/chatbot.js"></script>
+</body>
+</html>

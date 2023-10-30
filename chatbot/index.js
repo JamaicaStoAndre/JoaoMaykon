@@ -1,19 +1,27 @@
-// Importa os módulos necessários
+// Importar pacotes e módulos necessários
 const express = require('express');
 const bodyParser = require('body-parser');
-const webhookRoute = require('./routes/webhook');
+const routes = require('./routes/routes');
+const errorHandlingMiddleware = require('./middleware/errorHandlingMiddleware');
 
-// Cria a aplicação Express
+// Inicializar o servidor Express
 const app = express();
 
 // Configura o middleware para parsear JSON
 app.use(bodyParser.json());
 
-//Rotas
-// Define a rota para o webhook
-app.use('/webhook', webhookRoute);
+// Configurar o middleware para analisar o corpo das requisições
+app.use(express.json());  // Você pode usar isso ou bodyParser.json()
 
-// Inicia o servidor na porta 3000 ou na porta definida no ambiente
+// Middleware de erro
+app.use(errorHandlingMiddleware);
+//
+console.log("Passando pelo index.js");
+
+// Registra o roteador para a rota `/webhook`
+app.use('/webhook', routes);
+
+// Configurar porta e iniciar servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);

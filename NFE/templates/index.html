@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Leitor de Código de Barras e Visualizador de NFe</h1>
+    <button id="scanBarcode">Ler Código de Barras</button>
+    <div id="result"></div>
+    <div id="preview"></div> <!-- Div para visualização da câmera -->
+    
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</html>
